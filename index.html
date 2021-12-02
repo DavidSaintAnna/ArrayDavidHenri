@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Organização de Array</title>
+</head>
+
+<body>
+    <div class="main">
+        <h1 id="title"> Array David</h1>
+        <div class="main-content">
+            <div class="form-content">
+                <form id="survey-form">
+                    <label for="number1" id="number1-label">Primeiro Campo</label>
+                    <input id="number1" type="number" required placeholder="Coloque seu primeiro número " value="number" />
+                    <label for="number2" id="number2-label">Segundo Campo</label>
+                    <input id="number2" type="number" required placeholder="Coloque seu segundo número" value="number">
+                    <label for="number3" id="number3-label">Terceiro Campo</label>
+                    <input id="number3" type="number" required placeholder="Coloque seu terceiro número" value="number">
+                    <label for="number4" id="number4-label">Quarto Campo</label>
+                    <input id="number4" type="number" required placeholder="Coloque seu quarto número" value="number">
+                    <div class="buttons">
+                        <button type='button' onclick="storeValues()">Armazenar</button>
+                        <p id="showArray"></p>
+                    </div>
+                    <div class="buttons">
+                        <button type='button' onclick="reOrder()">Reorganizar</button>
+                        <p id="showArray2"></p>
+                    </div>
+                    <div class="buttons">
+                        <button type='button' onclick="ascendingOrder()">Ordem Crescente</button>
+                        <p id="showArray3"></p>
+                    </div>
+            </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
